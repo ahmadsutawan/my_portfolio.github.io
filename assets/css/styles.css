@@ -260,7 +260,6 @@ body.dark-theme {
   padding: 1rem 1rem;
   border-radius: .5rem;
   transition: .3s;
-  box-shadow: 0 8px 24px hsla(var(--hue), var(--sat), var(--lig), .25);
 }
 
 .button i {
@@ -394,7 +393,7 @@ body.dark-theme {
 
 .skills__data i {
   font-size: 1rem;
-  color: var(--first-color);
+  color: grey;
 }
 
 .skills__name {
