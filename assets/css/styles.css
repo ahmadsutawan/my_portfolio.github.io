@@ -300,7 +300,7 @@ body.dark-theme {
   border: none;
   outline: none;
   padding: 1rem;
-  color: lightgrey;
+  color: var(--title-color);
   font-size: var(--small-font-size);
   font-family: var(--body-font);
   font-weight: 500;
