@@ -267,7 +267,7 @@ body.dark-theme {
 }
 
 .button:hover {
-  background-color: var(--first-color-alt);
+  background-color: lightgrey;
 }
 
 .button__small {
