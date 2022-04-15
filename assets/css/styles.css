@@ -178,7 +178,7 @@ body.dark-theme {
 }
 
 .profile__border {
-  border: 3.5px solid var(--first-color);
+  border: 3.5px solid grey;
   justify-self: center;
   width: 115px;
   height: 115px;
@@ -255,7 +255,7 @@ body.dark-theme {
   display: inline-flex;
   align-items: center;
   column-gap: .5rem;
-  background-color: var(--first-color);
+  background-color: grey;
   color: #fff;
   padding: 1rem 1rem;
   border-radius: .5rem;
