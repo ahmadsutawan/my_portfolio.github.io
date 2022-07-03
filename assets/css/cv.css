@@ -319,8 +319,8 @@ li.active-link a{
     margin-bottom: var(--mb-1);
 }
 .home__img__qrcode__wa {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 5px;
     /* border: 1px solid rgba(0, 0, 0, .1); */
     justify-self: center;
@@ -398,6 +398,7 @@ li.active-link a{
 .experience__description {
     font-size: var(--smaller-font-size);
 }
+
 
 /* skills */
 .skills__content,
