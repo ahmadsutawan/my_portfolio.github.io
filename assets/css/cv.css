@@ -146,6 +146,8 @@ img {
 .bd-container {
     max-width: 968px;
     width: calc(100% - 30px);
+    margin-left: auto;
+    margin-right: auto;
 }
 .bd-grid {
     display: grid;
