@@ -4,7 +4,7 @@
 
 /* variables css */
 :root {
-    --header-height: 32px;
+    --header-height: 45px;
 
     /* color */
     --title-color: #0b0a0a;
@@ -160,7 +160,7 @@ img {
     left: 0;
     z-index: var(--z-fixed);
     background-color: var(--body-color);
-    box-sizing: 0 -1px 4px rgba(0, 0, 0, .1);
+    box-sizing: 0 -1px 15px rgba(0, 0, 0, .1);
     transform: .3s;
 }
 
@@ -244,8 +244,8 @@ li.active-link a{
     margin-bottom: var(--m-1);
 }
 .home__img__qrcode__wa {
-    width: 123px;
-    height: 123px;
+    width: 119px;
+    height: 119px;
     border-radius: 5px;
     /* border: 1px solid rgba(0, 0, 0, .1); */
     justify-self: center;
@@ -377,12 +377,14 @@ li.active-link a{
 }
 
 /* interests */
+.interests__container {
+    grid-template-columns: repeat(4, 1fr);
+}
 .interests__content {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-right: 15px;
-    margin-top: -5px;
 }
 .interests__icon {
     font-size: var(--h2-font-size);
@@ -392,7 +394,7 @@ li.active-link a{
 /* scrolltop */
 .scrolltop {
     position: fixed;
-    right: 15px;
+    right: 10px;
     bottom: -20%;
     display: flex;
     justify-content: center;
@@ -411,7 +413,7 @@ li.active-link a{
 /* scrolltopjs */
 .show-scroll {
     visibility: visible;
-    bottom: 40px;
+    bottom: 50px;
     transition: all .5s ease .0s;
 }
 
