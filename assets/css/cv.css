@@ -244,8 +244,8 @@ li.active-link a{
     margin-bottom: var(--m-1);
 }
 .home__img__qrcode__wa {
-    width: 112px;
-    height: 112px;
+    width: 123px;
+    height: 123px;
     border-radius: 5px;
     /* border: 1px solid rgba(0, 0, 0, .1); */
     justify-self: center;
@@ -280,6 +280,7 @@ li.active-link a{
 
 /* profile */
 .profile__description {
+    font-size: var(--normal-font-size);
     text-align: center;
 }
 .profile,
@@ -465,6 +466,7 @@ li.active-link a{
     }
     .section__title,
     .profile__description {
+        font-size: var(--normal-font-size);
         text-align: initial;
     }
     .home__container {
