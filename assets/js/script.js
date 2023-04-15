@@ -85,11 +85,12 @@ const areaCv = document.getElementById('area-cv')
 const resumeButton = document.getElementById('resume-button')
 
 let opt = {
-    margin:       0,
-    filename:     'myResumeCv.pdf',
-    image:        { type: 'jpeg', quality: 0.98 },
-    html2canvas:  { scale: 4 },
-    jsPDF:        { format: 'a4', orientation: 'portrait' }
+    margin: 0,
+    width: 968,
+    filename: 'myResumeCv.pdf',
+    image: {type: 'jpeg', quality: 100},
+    html2canvas: {scale: 2},
+    jsPDF: {unit: 'mm', format: 'a4', orientation: 'portrait'}
 };
 
 
