@@ -127,7 +127,7 @@ img {
 
 /* class css */
 .section {
-    padding: 26.2px 0;
+    padding: 26px 10px;
 }
 .section__title {
     font-size: var(--h2-font-size);
@@ -244,8 +244,8 @@ li.active-link a{
     margin-bottom: var(--m-1);
 }
 .home__img__qrcode__wa {
-    width: 120px;
-    height: 120px;
+    width: 122px;
+    height: 122px;
     border-radius: 5px;
     /* border: 1px solid rgba(0, 0, 0, .1); */
     justify-self: center;
