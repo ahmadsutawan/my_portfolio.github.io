@@ -61,7 +61,7 @@ html {
     top: 30px;
     display: flex;
     color: var(--text-color);
-    font-size: var(--h3-font-size);
+    font-size: var(--h2-font-size);
     cursor: pointer;
 }
 .change-theme:hover {
@@ -75,7 +75,7 @@ html {
     position: absolute;
     top: 30px;
     left: 0;
-    font-size: var(--h3-font-size);
+    font-size: var(--h2-font-size);
     color: var(--text-color);
     cursor: pointer;
 }
@@ -96,7 +96,7 @@ body.dark-theme {
 
 /* classes */
 body {
-    margin: 0;
+    margin: var(--header-height) 0 var(--header-height) 0;
     padding: 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
@@ -146,8 +146,6 @@ img {
 .bd-container {
     max-width: 968px;
     width: calc(100% - 30px);
-    margin-left: var(--m-3);
-    margin-right: var(--m-3);
 }
 .bd-grid {
     display: grid;
@@ -170,20 +168,6 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-@media screen and (max-width: 968px) {
-    .nav__menu {
-        position: fixed;
-        bottom: -100%;
-        left: 0;
-        width: 100%;
-        padding: 15px 10px;
-        background-color: var(--body-color);
-        box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
-        border-radius: 1rem 1rem 0 0;
-        z-index: -10;
-        transition: .5s;
-    }
 }
 .nav__logo,
 .nav__toogle {
@@ -244,8 +228,8 @@ li.active-link a{
     margin-bottom: var(--m-1);
 }
 .home__img__qrcode__wa {
-    width: 119px;
-    height: 119px;
+    width: 142px;
+    height: 142px;
     border-radius: 5px;
     /* border: 1px solid rgba(0, 0, 0, .1); */
     justify-self: center;
@@ -425,20 +409,26 @@ li.active-link a{
         gap: 15px;
     }
 }
+@media screen and (max-width: 968px) {
+    body {
+        margin: 0 0 var(--header-height) 0;
+    }
+    .nav__menu {
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        padding: 15px 10px;
+        background-color: var(--body-color);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+        border-radius: 1rem 1rem 0 0;
+        z-index: -10;
+        transition: .5s;
+    }
+}
 
 /* dekstop screen */
 @media screen and (min-width: 968px) {
-    body {
-        --body-font: 'Poppins', sans-serif;
-        --h1-font-size: 16px;
-        --h2-font-size: 14px;
-        --h3-font-size: 14px;
-        --normal-font-size: 12px;
-        --small-font-size: 10px;
-    }
-    /* body {
-        margin: 30px 0;
-    } */
     .bd-container {
         margin-left: auto;
         margin-right: auto;
