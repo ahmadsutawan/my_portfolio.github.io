@@ -127,7 +127,7 @@ img {
 
 /* class css */
 .section {
-    padding: 26px 12px;
+    padding: 26px 10px;
 }
 .section__title {
     font-size: var(--h2-font-size);
