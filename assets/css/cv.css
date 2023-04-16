@@ -329,7 +329,7 @@ li.active-link a{
     color: var(--title-color);
 }
 .education__year,
-xperience__description {
+.experience__description {
     font-size: var(--normal-font-size);
 }
 
