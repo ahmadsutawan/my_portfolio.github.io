@@ -328,7 +328,9 @@ li.active-link a{
     font-size: var(--normal-font-size);
     color: var(--title-color);
 }
-.education__year,
+.education__year {
+    font-size: var(--normal-font-size);
+}
 .experience__description {
     font-size: var(--normal-font-size);
 }
