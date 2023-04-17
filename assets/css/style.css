@@ -91,7 +91,7 @@ body.dark-mode {
 }
 .toggle-mode {
     position: absolute;
-    right: 0;
+    right: 5;
     top: 5px;
     display: flex;
     color: var(--text-color);
@@ -530,7 +530,7 @@ li.active-link a{
         cursor: pointer;
     }
     .section{
-        margin-top: -20px;
+        margin-top: -10px;
     }
 }
 /* dekstop screen */
