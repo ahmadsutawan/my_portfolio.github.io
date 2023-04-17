@@ -19,11 +19,11 @@
     --h1-font-size: 16px;
     --h2-font-size: 14px;
     --p-font-size: 12px;
-    --small-font-size: 10px;
+    --s-font-size: 10px;
 
     /* font weight */
-    --font-medium: 500;
-    --font-semi-bold: 600;
+    --font-medium: 400;
+    --font-semi-bold: 500;
 
     /* margin */
     --m-1: 5px;
@@ -398,7 +398,7 @@ li.active-link a{
     color : var(--text-color); 
 }
 .languages__content ul li p span{
-    font-size: 10px; 
+    font-size: var(--s-font-size); 
     color : var(--text-color-light); 
 }
 .languages__name {
@@ -506,7 +506,7 @@ li.active-link a{
     gap: 5px;
 }
 .competences__content ul li p span {
-    font-size: 10px; 
+    font-size: var(--s-font-size); 
     color : var(--text-color-light); 
 }
 /* end competences */
