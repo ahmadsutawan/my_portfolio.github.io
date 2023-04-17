@@ -91,7 +91,7 @@ body.dark-mode {
 }
 .toggle-mode {
     position: absolute;
-    right: 5;
+    right: 0;
     top: 5px;
     display: flex;
     color: var(--text-color);
@@ -523,7 +523,7 @@ li.active-link a{
     .toggle-mode {
         position: absolute;
         right: 5px;
-        top: 5px;
+        top: -15px;
         display: flex;
         color: var(--text-color);
         font-size: var(--h2-font-size);
