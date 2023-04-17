@@ -523,7 +523,7 @@ li.active-link a{
     .toggle-mode {
         position: absolute;
         right: 5px;
-        top: -10px;
+        top: 5px;
         display: flex;
         color: var(--text-color);
         font-size: var(--h2-font-size);
