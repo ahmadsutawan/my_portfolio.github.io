@@ -90,9 +90,9 @@ body.dark-mode {
     font-weight: var(--font-semi-bold);
 }
 /* scale pdf */
-.scale-cv .change-theme,
+.scale-cv .toggle-mode,
 .scale-cv .generate-pdf {
-    display: none;
+    display: none !important;
 }
 .scale-cv .bd-container {
     max-width: 968px;
@@ -114,7 +114,7 @@ img {
     height: auto;
 }
 .section {
-    padding: 26px 5px;
+    padding: 27px 5px;
 }
 .section__title {
     font-size: var(--h2-font-size);
@@ -229,7 +229,7 @@ li.active-link a{
     }
     .resume__left,
     .resume__right {
-        padding: 0 15px;
+        padding: 10px;
     }
     .generate-pdf {
         display: inline-block;
@@ -287,27 +287,26 @@ li.active-link a{
     text-align: center;
 }
 .home__img {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, .1);
     justify-self: center;
-    /* margin-bottom: var(--m-1); */
+    margin: var(--m-1);
 }
 .home__img__qrcode__wa {
-    width: 122px;
-    height: 122px;
+    width: 125px;
+    height: 125px;
     border-radius: 5px;
-    /* border: 1px solid rgba(0, 0, 0, .1); */
     justify-self: center;
-    /* margin-bottom: var(--m-1); */
+    margin-bottom: var(--m-1);
 }
 .home__title {
     font-size: var(--h1-font-size);
 }
 .home__profession {
+    margin-top: -5px;
     font-size: var(--p-font-size);
-    /* margin-top: -8px !important; */
 }
 .home__address {
     gap: 10px;
@@ -453,6 +452,14 @@ li.active-link a{
     background-color: var(--text-color-light);
     transform: translate(7px, 0);
 }
+.experiences__circle {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-right: 15px;
+    background-color: var(--text-color);
+}
 .experiences__title {
     font-size: var(--p-font-size);
     font-weight: var(--font-semi-bold);
@@ -467,21 +474,13 @@ li.active-link a{
 .experiences__project {
     font-size: var(--p-font-size);
 }
-.experiences__description {
-    font-size: var(--p-font-size);
-}
-.experiences__circle {
-    display: inline-block;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    margin-right: 15px;
-    background-color: var(--text-color);
-}
 .experiences__name {
     display: flex;
     align-items: center;
     margin-bottom: var(--m-1);
+}
+.experiences__description {
+    font-size: var(--p-font-size);
 }
 /* end experiences */
 
