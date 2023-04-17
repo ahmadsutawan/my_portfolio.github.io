@@ -1,3 +1,4 @@
+// menu nav
 // show menu
 const showMenu = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId),
@@ -29,20 +30,11 @@ li.forEach(el => {
         el.classList.add('active-link');
     })
 })
+// end menu nav
 
 
-// scrolltop
-function scrollTop(){
-    const scrollTop = document.getElementById('scroll-top');
-    if(this.scrollY >= 200) scrollTop.classList.add('show-scroll'); 
-    else scrollTop.classList.remove('show-scroll')
-}
-window.addEventListener('scroll', scrollTop)
 
-function scrolltop(){
-    window.scrollTo(0, 0)
-}
-
+// dark mode
 // change theme light/dark
 const themeButton = document.getElementById('mode-button')
 const darkTheme = 'dark-mode'
@@ -72,8 +64,30 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+// end dark mode
 
-// download
+
+
+
+// scrolltop
+function scrollTop(){
+    const scrollTop = document.getElementById('scroll-top');
+    if(this.scrollY >= 200) scrollTop.classList.add('show-scroll'); 
+    else scrollTop.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollTop)
+
+function scrolltop(){
+    window.scrollTo(0, 0)
+}
+
+// end scrolltop
+
+
+
+
+// pdf
+// scale pdf
 function scaleCv() {
     document.body.classList.add('scale-cv')
 }
@@ -93,7 +107,6 @@ let opt = {
     jsPDF: {format: 'a4', orientation: 'portrait'}
 };
 
-
 function generateResume() {
     html2pdf(areaCv, opt)
 }
@@ -102,3 +115,42 @@ resumeButton.addEventListener('click', () => {
     generateResume()
     setTimeout(removeScaleCv,5000)
 })
+// end pdf
+
+
+/* == filter tabs === */
+// const tabs = document.querySelectorAll('[data-target]'),
+//     tabContents = document.querySelectorAll('[data-content]')
+
+// tabs.forEach(tab =>{
+//     tab.addEventListener('click', () =>{
+//         const target = document.querySelector(tab.dataset.target)
+
+//         tabContents.forEach(tc =>{
+//             tc.classList.remove('filters__active')
+//         })
+//         target.classList.add('filters__active')
+
+//         tabs.forEach(t =>{
+//             t.classList.remove('filter-tab-active')
+//         })
+//         tab.classList.add('filter-tab-active')
+//     })
+// })
+
+/*=== scroll animation ===*/
+// const sr = ScrollReveal({
+//     origin: 'top',
+//     distance: '60px',
+//     duration: 2500,
+//     delay: 400,
+// })
+
+// sr.reveal(`.profiles__border`)
+// sr.reveal(`.profiles__name`, {delay: 500})
+// sr.reveal(`.profiles__profession`, {delay: 600})
+// sr.reveal(`.profiles__social`, {delay: 700})
+// sr.reveal(`.profiles__info-group`, {interval: 100, delay: 700})
+// sr.reveal(`.profiles__buttons`, {delay: 800})
+// sr.reveal(`.filters__content`, {delay: 900})
+// sr.reveal(`.filters`, {delay: 1000})
