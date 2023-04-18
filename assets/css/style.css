@@ -186,6 +186,7 @@ section {
     margin-bottom: 10px;
 }
 .section_description {
+    font-family: var(--body-font);
     font-size: var(--normal);
 }
 h1, h2, h3, ul, p, a {
@@ -263,6 +264,14 @@ img {
     margin-right: 5px;
     color: var(--title-color);
 }
+/* end home */
+
+/* profile */
+.profiles_description {
+    font-family: var(--body-font);
+    font-size: var(--normal);
+}
+/* end profile */
 
 /* educations */
 .educations_time {
@@ -400,6 +409,10 @@ img {
     display: flex;
     align-items: center;
     margin-bottom: 5px;
+}
+.experiences_description {
+    font-family: var(--body-font);
+    font-size: var(--normal);
 }
 /* end experiences */
 
