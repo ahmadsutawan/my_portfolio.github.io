@@ -185,6 +185,9 @@ section {
     text-align: initial;
     margin-bottom: 10px;
 }
+.section_description {
+    font-size: var(--normal);
+}
 h1, h2, h3, ul, p, a {
     margin: 0;
     padding: 0;
@@ -260,12 +263,6 @@ img {
     margin-right: 5px;
     color: var(--title-color);
 }
-
-/* profiles */
-.profiles .profiles_description{
-    font-size: var(--normal) !important;
-}
-/* end profiles */
 
 /* educations */
 .educations_time {
@@ -403,9 +400,6 @@ img {
     display: flex;
     align-items: center;
     margin-bottom: 5px;
-}
-.experiences_description {
-    font-size: var(--normal);
 }
 /* end experiences */
 
