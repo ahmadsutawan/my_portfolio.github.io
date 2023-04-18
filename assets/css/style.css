@@ -140,10 +140,10 @@ body.dark-mode {
     display: flex;
     flex-direction: column;
     font-size: var(--normal);
-    color: var(--line-color);
+    color: var(--text-color);
 }
 .nav_link:hover {
-    color: var(--text-color);
+    color: var(--title-color);
 }
 .nav_icon {
     font-size: var(--h2);
@@ -156,7 +156,7 @@ body.dark-mode {
     transition: var(--transition-speed) !important;
 }
 li.active-link a{
-    color: var(--text-color);
+    color: var(--title-color);
     font-weight: bold;
 }
 /* end nav */
