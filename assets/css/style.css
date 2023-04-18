@@ -51,7 +51,7 @@ body.dark-mode {
     --side-left-background: #181616;
     --body-background: #2b2b2b;
     --transition-speed: all .5s ease;
-    
+
     /* fonts*/
     --body-font: 'Poppins', sans-serif;
     --h1: 16px;
@@ -173,7 +173,7 @@ li.active-link a{
 /* main */
 section {
     /* edit size padding if there adding content of cv */
-    padding: 20.1px 5px; 
+    padding: 19.8px 10px; 
 }
 .section_title {
     font-size: var(--h2);
@@ -262,8 +262,8 @@ img {
 }
 
 /* profiles */
-.profiles_description{
-    font-size: var(--normal);
+.profiles .profiles_description{
+    font-size: var(--normal) !important;
 }
 /* end profiles */
 
