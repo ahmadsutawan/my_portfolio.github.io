@@ -163,7 +163,7 @@ img {
 .profile_contact i{
   font-size: var(--h1);
   padding: 10px 10px;
-  background-color: var(--side-right-background);
+  background-color: var(--side-left-background);
   color: var(--text-color);
   margin: 5px;
   border-radius: 5px;
