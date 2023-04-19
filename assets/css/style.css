@@ -7,8 +7,8 @@
 :root {
     /* color */
     --title-color: #0b0a0a;
-    --text-color: #403a3a;
-    --line-color: #c7c7c7;
+    --text-color: #2e2e2e;
+    --line-color: #adadad;
     --side-right-background: #fafafa;
     --side-left-background: #f0efef;
     --body-background: #fcfcfc;
@@ -17,7 +17,7 @@
     /* fonts*/
     --body-font: 'Poppins', sans-serif;
     --title: 14px;
-    --subtitle: 13px;
+    --subtitle: 12px;
     --normal: 12px;
     --small: 10px;
 }
@@ -45,8 +45,8 @@ body {
 body.dark-mode {
     /* color */
     --title-color: #f2f2f2;
-    --text-color: #bfbfbf;
-    --line-color: #505050;
+    --text-color: #c2c2c2;
+    --line-color: #adadad;
     --side-right-background: #212121;
     --side-left-background: #181616;
     --body-background: #2b2b2b;
@@ -55,7 +55,7 @@ body.dark-mode {
     /* fonts*/
     --body-font: 'Poppins', sans-serif;
     --title: 14px;
-    --subtitle: 13px;
+    --subtitle: 12px;
     --normal: 12px;
     --small: 10px;
 }
@@ -165,7 +165,7 @@ li.active-link a{
 /* main */
 section {
     /* edit size padding if there adding content of cv */
-    padding: 15.9px 15px; 
+    padding: 16px 15px; 
 }
 .section_title {
     font-size: var(--title);
@@ -175,16 +175,13 @@ section {
     text-align: initial;
     margin-bottom: 10px;
 }
-title, h2, h3, ul, li, p, a {
+title, h1, h2, ul, li, p, a, span {
     margin: 0;
     padding: 0;
     color: var(--text-color);
     text-decoration: none;
     list-style: none;
 }
-/* .resume_left ul {
-    margin-top: -2px;
-} */
 ul li {
     padding: 2px;
 }
@@ -226,9 +223,9 @@ img {
     justify-self: center;
 }
 .home_title {
-    font-size: var(--title);
-    font-weight: normal;
-    color: var(--title-color);
+    font-size: 15px;
+    color: var(--text-color);
+    margin-top: 10px;
 }
 .home_title span{
     font-size: var(--title);
@@ -238,7 +235,6 @@ img {
 .home_profession {
     font-size: var(--normal);
     color: var(--title-color);
-    margin-top: -10px;
 }
 .home_img_qrcode_wa {
     width: 120px;
@@ -298,7 +294,7 @@ img {
     transform: translate(5px, 0);
 }
 .educations_title {
-    font-size: var(--normal);
+    font-size: var(--subtitle);
     color: var(--title-color);
     margin-top: -2px;
 }
@@ -335,9 +331,14 @@ img {
     display: inline-block;
     margin-right: 5px;
 }
-.languages_name p span{
+.languages_name span{
+    font-size: var(--normal); 
+    color : var(--text-color); 
+}
+.languages_name sub{
     font-size: var(--small); 
-    color : var(--line-color); 
+    color : var(--line-color);
+    margin-left: 5px;
 }
 /* end languages */
 
@@ -426,9 +427,14 @@ img {
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
 }
-.competences_name p span {
+.competences_name span {
+    font-size: var(--normal); 
+    color : var(--text-color); 
+}
+.competences_name sub {
     font-size: var(--small); 
-    color : var(--line-color); 
+    color : var(--line-color);
+    margin-left: 5px;
 }
 /* end competences */
 
