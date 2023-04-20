@@ -55,7 +55,7 @@ body {
     transition: var(--transition-speed);
 }
 h3, h4 {
-    font-size: var(--title-color);
+    font-size: var(--title);
     color: var(--title-color);
 }
 ul, li, p, a, span {
@@ -63,6 +63,9 @@ ul, li, p, a, span {
     color: var(--text-color);
     text-decoration: none;
     list-style: none;
+}
+ul li {
+    padding: 2px;
 }
 img {
     max-width: 100%;
@@ -252,7 +255,6 @@ section {
     align-items: center;
     font-size: var(--normal);
     color: var(--text-color);
-    padding: 2px;
 }
 .contacts_name a:hover {
     color: var(--title-color);
@@ -327,7 +329,6 @@ section {
     gap: 5px;
 }
 .languages_content {
-    display: flex;
     font-size: var(--normal);
     grid-template-columns: repeat(2, max-content);
 }
@@ -335,7 +336,6 @@ section {
     font-size: var(--normal);
     display: flex;
     align-items: center;
-    margin-right: 20px;
 }
 .languages_name i{
     display: inline-block;
@@ -353,23 +353,24 @@ section {
 
 /* interests */
 .interests_container {
-    grid-template-columns: repeat(4, max-content);
+    grid-template-columns: repeat(4, max-width);
     gap: 5px;
 }
 .interests_content {
     display: flex;
-    font-size: var(--normal);
+    flex-direction: row;
     color: var(--text-color);
+    font-size: var(--normal);
 }
 .interests_icon {
     font-size: var(--title);
     color: var(--title-color);
-    margin-left: 10px;
+    margin-left: 5px;
 }
 .interests_name {
     font-size: var(--normal);
     color: var(--text-color);
-    margin-right: 20px;
+    padding-right: 10px;
 }
 /* -- end resume left -- */
 
@@ -385,6 +386,7 @@ section {
 .experiences_content {
     display: flex;
     font-size: var(--normal);
+    margin-top: 5px;
 }
 .experiences_point {
     padding-right: 5px;
@@ -419,7 +421,6 @@ section {
 }
 .experiences_name {
     display: flex;
-    padding: 2px;
     align-items: center;
 }
 .experiences_name i {
@@ -427,7 +428,7 @@ section {
 }
 .experiences_description {
     font-size: var(--normal);
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 /* competences */
@@ -435,15 +436,12 @@ section {
     gap: 5px;
 }
 .competences_content{
-    display: grid;
     font-size: var(--normal);
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
 }
 .competences_name {
     display: flex;
-    padding: 2px;
-    font-size: var(--normal);
     align-items: center;
 }
 .competences_name i {
@@ -464,14 +462,12 @@ section {
     gap: 5px;
 }
 .managements_content{
-    display: grid;
+    font-size: var(--normal);
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
 }
 .managements_name{
     display: flex;
-    padding: 2px;
-    font-size: var(--normal);
     align-items: center;
 }
 .managements_name i{
