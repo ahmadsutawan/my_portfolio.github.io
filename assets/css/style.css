@@ -278,7 +278,7 @@ section {
     display: flex;
     font-size: var(--normal);
 }
-.profiles_description {
+.profiles_description p {
     font-size: var(--normal);
 }
 
@@ -426,7 +426,7 @@ section {
 .experiences_name i {
     margin-right: 10px;
 }
-.experiences_description {
+.experiences_description p {
     font-size: var(--normal);
     margin-bottom: 15px;
 }
