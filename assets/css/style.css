@@ -522,7 +522,7 @@ section {
     visibility: hidden;
 }
 .scrolltop_icon {
-    font-size: var(--f-lg);
+    font-size: var(--f-md);
     color: var(--cl-text);
 }
 
