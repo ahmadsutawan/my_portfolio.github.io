@@ -356,7 +356,7 @@ ul, li, p, a, span {
     justify-content: center;
     align-items: center;
     padding: var(--xs);
-    background-color: var(--bg-content);
+    backdrop-filter: blur(5px);
     border-radius: var(--xs);
     z-index: 10;
     transition: var(--transition-speed);
