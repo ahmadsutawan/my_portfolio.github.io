@@ -67,8 +67,8 @@ body.dark-mode {
     --bg-content: #adadad;
     --cl-title: #f2f2f2;
     --cl-text: #c2c2c2;
-    --bg-resume-left: #181616;
-    --bg-resume-right: #212121;
+    --bg-resume-left: #1f1f1f;
+    --bg-resume-right: #5f5f5f;
 
     /* transition speed */
     --transition-speed: all .5s ease;
