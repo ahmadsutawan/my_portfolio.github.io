@@ -595,7 +595,8 @@ section {
     .generate-pdf {
         display: none;
     }
-    .resume {
+    .resume_lefr,
+    .resume_right {
         background-color: var(--bg-body);
     }
     .home_img {
