@@ -239,7 +239,7 @@ ul, li, p, a, span {
     width: 100%;
     border: none;
     outline: none;
-    padding: var(--sm);
+    padding: var(--xs);
     color: var(--cl-title);
     font-size: var(--f-md);
     border-radius: var(--xs);
