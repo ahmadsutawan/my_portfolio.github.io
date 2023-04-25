@@ -28,9 +28,10 @@
 
     /* -- color units -- */
     --bg-body: #fff;
-    --bg-content: #dfdfdf;
+    --bg-content: #efefef;
     --cl-title: #0b0b0b;
     --cl-text: #0c0c0c;
+    --cl-subtext: #cfcfcf;
 
     /* transition speed */
     --transition-speed: all .5s ease;
@@ -61,9 +62,10 @@ body.dark-mode {
 
     /* -- color units -- */
     --bg-body: #000;
-    --bg-content: #4f4f4f;
+    --bg-content: #1f1f1f;
     --cl-title: #fbfbfb;
     --cl-text: #fcfcfc;
+    --cl-subtext: #5f5f5f;
 
     /* transition speed */
     --transition-speed: all .5s ease;
@@ -230,7 +232,7 @@ ul, li, p, a, span {
 .tabs_content {
     margin: var(--xs) 0 var(--xs);
     background: var(--bg-content);
-    padding: var(--xs);
+    padding: 3px;
     border-radius: var(--xs);
     display: flex;
     justify-content: space-between;
@@ -239,7 +241,7 @@ ul, li, p, a, span {
     width: 100%;
     border: none;
     outline: none;
-    padding: var(--xs);
+    padding: var(--sm);
     color: var(--cl-title);
     font-size: var(--f-md);
     border-radius: var(--xs);
@@ -288,11 +290,11 @@ ul, li, p, a, span {
 }
 .projects_card span {
     font-size: var(--f-md);
-    color: var(--cl-title);
+    color: var(--cl-text);
 }
 .projects_card sub {
     font-size: var(--f-sm);
-    color: var(--cl-title);
+    color: var(--cl-text);
 }
 
 /* skills */
@@ -333,7 +335,7 @@ ul, li, p, a, span {
 }
 .skills_name sub {
     font-size: var(--f-sm);
-    color: var(--bg-content);
+    color: var(--cl-subtext);
 }
 /* -- end main -- */
 
