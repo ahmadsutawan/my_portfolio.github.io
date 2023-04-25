@@ -28,11 +28,12 @@
     
     /* -- color units -- */
     --bg-body: #fff;
-    --bg-content: #afafaf;
     --bg-content-left: #efefef;
     --bg-content-right: #fefefe;
-    --cl-title: #0b0b0b;
-    --cl-text: #0c0c0c;
+    --cl-title: #0a0a0a;
+    --cl-text: #3a3a3a;
+    --cl-item: #dfdfdf;
+    --cl-subtext: #cfcfcf;
 
     /* transition speed */
     --transition-speed: all .5s ease;
@@ -64,11 +65,12 @@ body.dark-mode {
 
     /* color */
     --bg-body: #000;
-    --bg-content: #5f5f5f;
-    --bg-content-left: #1e1e1e;
-    --bg-content-right: #0e0e0e;
-    --cl-title: #fbfbfb;
-    --cl-text: #fcfcfc;
+    --bg-content-left: #1a1a1a;
+    --bg-content-right: #0a0a0a;
+    --cl-title: #fcfcfc;
+    --cl-text: #cfcfcf;
+    --cl-item: #3f3f3f;
+    --cl-subtext: #5f5f5f;
 
     /* transition speed */
     --transition-speed: all .5s ease;
@@ -176,6 +178,7 @@ img {
 .nav_brand span{
     color: var(--cl-title);
     font-size: var(--f-md);
+    margin-left: var(--xs);
 }
 .nav_item {
     text-align: center;
@@ -241,7 +244,7 @@ section {
     width: var(--wh-img);
     height: var(--wh-img);
     border-radius: 50%;
-    border: 2px solid var(--bg-content);
+    border: 2px solid var(--cl-item);
     justify-self: center;
 }
 .home_title {
@@ -264,7 +267,7 @@ section {
     border-radius: var(--xs);
     justify-self: center;
     margin-top: var(--lg);
-    border: 2px solid var(--bg-content);
+    border: 2px solid var(--cl-item);
 }
 
 /* contacts */
@@ -321,14 +324,14 @@ section {
     height: var(--sm);
     margin-top: 3px;
     border-radius: 50%;
-    background-color: var(--bg-content);
+    background-color: var(--cl-subtext);
 }
 .educations_line {
     display: block;
     width: 2px;
     height: 100%;
     margin-left: -1px;
-    background-color: var(--bg-content);
+    background-color: var(--cl-subtext);
     transform: translate(5px, 0);
 }
 .educations_title {
@@ -365,6 +368,7 @@ section {
 }
 .languages_name i{
     margin-right: var(--xs);
+    font-size: var(--f-sm);
 }
 .languages_name span{
     font-size: var(--f-md); 
@@ -372,7 +376,7 @@ section {
 }
 .languages_name sub{
     font-size: var(--f-sm); 
-    color : var(--bg-content);
+    color : var(--cl-subtext);
     margin: 0 var(--md) 0 var(--xs);
 }
 
@@ -423,13 +427,13 @@ section {
     height: 12px;
     margin-top: 2px;
     border-radius: 50%;
-    background-color: var(--bg-content);
+    background-color: var(--cl-subtext);
 }
 .experiences_line {
     display: block;
     width: 2px;
     height: 100%;
-    background-color: var(--bg-content);
+    background-color: var(--cl-subtext);
     transform: translate(5px, 0);
 }
 .experiences_title {
@@ -478,6 +482,7 @@ section {
 }
 .competences_name i {
     margin-right: var(--xs);
+    font-size: var(--f-sm);
 }
 .competences_name span {
     font-size: var(--f-md); 
@@ -485,7 +490,7 @@ section {
 }
 .competences_name sub {
     font-size: var(--f-sm); 
-    color : var(--bg-content);
+    color : var(--cl-subtext);
     margin-left: var(--xs);
 }
 
@@ -504,6 +509,7 @@ section {
 }
 .managements_name i{
     margin-right: var(--xs);
+    font-size: var(--f-sm);
 }
 /* -- end resume right -- */
 
@@ -604,7 +610,7 @@ section {
         width: var(--wh-img);
         height: var(--wh-img);
         border-radius: 50%;
-        border: 2px solid var(--bg-content);
+        border: 2px solid var(--cl-item);
         justify-self: center;
         margin-top: -35px;
     }
