@@ -455,6 +455,10 @@ section {
     display: grid;
     margin-bottom: var(--xs);
 }
+.experiences_sublist {
+    display: grid;
+    margin-left: 15px;
+}
 .experiences_name {
     align-items: center;
 }
