@@ -44,6 +44,7 @@ body.dark-mode {
     --h-full: 100%;
     --w-container: 968px;
     --wh-img: 150px;
+    --w-card: 300px;
 
     /* -- typography units -- */
     --body-font: 'Poppins', sans-serif;
@@ -151,6 +152,11 @@ ul, li, p, a, span {
     border-radius: 50%;
     justify-self: center;
 }
+.profiles_greeting {
+    font-size: var(--f-lg);
+    font-weight: normal;
+    margin-bottom: var(--sm);
+}
 .profiles_name {
     font-size: var(--f-lg);
     font-weight: normal;
@@ -177,6 +183,12 @@ ul, li, p, a, span {
     color: var(--cl-title);
     margin-bottom: var(--sm);
 }
+.profiles_description span{
+    font-size: var(--f-md);
+    /*color: var(--cl-text);*/
+    font-weight: bold;
+}
+
 .profiles_text {
     font-size: var(--f-md);
     color: var(--cl-text);
@@ -273,6 +285,11 @@ ul, li, p, a, span {
     justify-items: center;
 }
 .projects_card img {
+    width: var(--w-card);
+    height: var(--w-card);
+    justify-items: center;
+}
+.projects_card video {
     width: var(--w-card);
     height: var(--w-card);
     justify-items: center;
