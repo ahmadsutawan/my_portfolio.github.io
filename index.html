@@ -24,13 +24,19 @@
                     <img src="assets/img/photo.jpg" alt="">
                 </div>
                 <div class="profiles_item">
-                    <h3 class="profiles_name">Ahmad <span>Sutawan</span></h3>
-                    <h4 class="profiles_profession">Quality Assurance</h4>
+                    <p class="profiles_greeting">
+                        Hello, i'm
+                    </p>
+                    <h1 class="profiles_name">Ahmad <span>Sutawan</span></h1>
+                    <h2 class="profiles_profession">Software Quality Assurance</h2>
+                    <p class="profiles_description">
+                        With experience in company banking industries. Knowledge in web application and mobile application testing, proficient in integration testing, regression testing, end-to-end testing, and API testing. I offer the best projects resulting in quality work.
+                    </p>
                     <div class="profiles_group">
                         <div class="profiles_description">
-                            <span class="profiles_number">+3</span>
+                            <p>+<span id="years"></span></p>
                             <p class="profiles_text">
-                                Years of work
+                                Experience of work
                             </p>
                         </div>
                         <div class="profiles_description">
@@ -243,6 +249,17 @@
     <script src="assets/js/scrollreveal.min.js"></script>
     <script src="assets/js/script.js"></script>
     <!-- end script js -->
+<script>
+    // yeaars of experience
+    const yearEnter = new Date('2020-03');
+    const yearNow = new Date();
 
+    const years = yearNow.getFullYear() - yearEnter.getFullYear();
+    const months = yearNow.getMonth() - yearEnter.getMonth();
+
+    document.getElementById('years').innerText = years +' years';
+    document.getElementById('months').innerText = months;
+
+</script>
 </body>
 </html>
