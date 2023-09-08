@@ -116,3 +116,13 @@ resumeButton.addEventListener('click', () => {
     setTimeout(removeScaleCv, 3000)
 })
 // end pdf
+
+// years of experience
+const yearJoin = new Date('2020-03');
+const yearCurrent = new Date();
+
+const year = yearCurrent.getFullYear() - yearJoin.getFullYear();
+const month = yearCurrent.getMonth() - yearJoin.getMonth();
+
+document.getElementById('year').innerText = year;
+document.getElementById('month').innerText = month;
