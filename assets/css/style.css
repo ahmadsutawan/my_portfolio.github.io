@@ -249,17 +249,20 @@ section {
 }
 .home_title {
     font-size: var(--f-lg);
-    /* color: var(--cl-text); */
+    color: var(--cl-text);
     margin-top: var(--sm);
+    margin-bottom: var(--sm);
 }
 .home_title span{
     font-size: var(--f-lg);
     font-weight: bold;
-    color: var(--cl-text);
+    color: var(--cl-title);
 }
 .home_profession {
     font-size: var(--f-md);
     color: var(--cl-title);
+    font-weight: bold;
+    margin-bottom: var(--sm);
 }
 .home_img_qrcode_wa {
     width: var(--wh-qr);
@@ -471,28 +474,28 @@ section {
     margin-bottom: var(--md);
 }
 
-/* competences */
-.competences_container {
+/* skills */
+.skills_container {
     gap: var(--xs);
 }
-.competences_content{
+.skills_content{
     font-size: var(--f-md);
     grid-template-columns: repeat(2, 1fr);
     gap: var(--xs);
 }
-.competences_name {
+.skills_name {
     display: flex;
     align-items: center;
 }
-.competences_name i {
+.skills_name i {
     margin-right: var(--xs);
     font-size: var(--f-sm);
 }
-.competences_name span {
+.skills_name span {
     font-size: var(--f-md); 
     color : var(--cl-text); 
 }
-.competences_name sub {
+.skills_name sub {
     font-size: var(--f-sm); 
     color : var(--cl-subtext);
     margin-left: var(--xs);
@@ -563,7 +566,7 @@ section {
     .download_pdf {
         display: none;
     }
-    .competences_content{
+    .skills_content{
         font-size: var(--f-md);
         grid-template-columns: repeat(1, 1fr);
         gap: var(--xs);
