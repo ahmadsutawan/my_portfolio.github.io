@@ -33,7 +33,7 @@
     --cl-title: #0a0a0a;
     --cl-text: #3a3a3a;
     --cl-item: #dfdfdf;
-    --cl-subtext: #cfcfcf;
+    --cl-subtext: #a3a3a3;
 
     /* transition speed */
     --transition-speed: all .5s ease;
@@ -243,6 +243,7 @@ section {
 .home_img {
     width: var(--wh-img);
     height: var(--wh-img);
+    background: var(--bg-content-right);
     border-radius: 50%;
     border: 2px solid var(--cl-item);
     justify-self: center;
@@ -272,6 +273,22 @@ section {
     margin-top: var(--lg);
     border: 2px solid var(--cl-item);
 }
+.home_description{
+    font-size: var(--f-md);
+}
+
+/* profiles */
+.profiles_container {
+    gap: var(--xs);
+}
+.profiles_content {
+    display: flex;
+    font-size: var(--f-md);
+}
+.profiles_description {
+    font-size: var(--f-md);
+}
+
 
 /* contacts */
 .contacts_container {
@@ -298,18 +315,6 @@ section {
     font-size: var(--f-md);
     margin-right: var(--xs);
     color: var(--cl-title);
-}
-
-/* profiles */
-.profiles_container {
-    gap: var(--xs);
-}
-.profiles_content {
-    display: flex;
-    font-size: var(--f-md);
-}
-.profiles_description {
-    font-size: var(--f-md);
 }
 
 /* educations */
@@ -464,6 +469,11 @@ section {
 }
 .experiences_name {
     align-items: center;
+}
+.experiences_name ul li sub{
+    font-size: 11px;
+    color : var(--cl-subtext);
+    margin: 0 var(--xs) 0 var(--xs);
 }
 .experiences_name i {
     font-size: var(--sm);
