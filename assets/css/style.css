@@ -8,7 +8,7 @@
     --w-full: 100%;
     --h-full: 100%;
     --w-container: 968px;
-    --wh-img: 150px;
+    --wh-img: 168px;
     --wh-qr: 120px;
 
     /* -- typography units -- */
@@ -156,8 +156,7 @@ img {
     bottom: 0;
     left: 0;
     z-index: 100;
-    background-color: var(--bg-body);
-    transform: all .3s ease;
+    background-color: var(--bg-body)
 }
 
 /* nav */
@@ -204,7 +203,7 @@ img {
 
 /* -- main -- */
 section {
-    padding: 11.8px var(--md); 
+    padding: 12px var(--md);
 }
 .section_title {
     font-size: var(--f-lg);
@@ -270,7 +269,7 @@ section {
     height: var(--wh-qr);
     border-radius: var(--xs);
     justify-self: center;
-    margin-top: var(--lg);
+    margin-top: var(--sm);
     border: 2px solid var(--cl-item);
 }
 .home_description{
@@ -390,23 +389,27 @@ section {
 
 /* interests */
 .interests_container {
-    grid-template-columns: repeat(4, max-width);
+    grid-template-columns: repeat(4, max-content);
     gap: var(--xs);
 }
 .interests_content {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
     color: var(--cl-text);
     font-size: var(--f-md);
 }
 .interests_icon {
-    font-size: var(--f-md);
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    font-size: var(--lg);
     color: var(--cl-title);
-    margin: var(--xs)  var(--xs) var(--xs) var(--sm);
+    margin-left: 5px;
 }
 .interests_name {
+    display: grid;
     font-size: var(--f-md);
     color: var(--cl-text);
-    padding-right: var(--md);
+    padding-right: 90px;
 }
 /* -- end resume left -- */
 
